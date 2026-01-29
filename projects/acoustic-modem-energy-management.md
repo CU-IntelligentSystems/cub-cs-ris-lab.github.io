@@ -45,7 +45,7 @@ nav_order: 2
 {% assign project_wips = site.pages | where_exp: "page", "page.project == 'acoustic-model-energy-management'" | sort: "date" | reverse %}
 {% if project_wips.size > 0 %}
 {% for wip in project_wips %}
-- [{{ wip.title }}]({{ wip.url }}) - {{ wip.date | date: "%Y-%m-%d" }}
+- [{{ wip.title }}]({{ wip.url | relative_url }}) - {{ wip.date | date: "%Y-%m-%d" }}
 {% endfor %}
 {% else %}
 *No WIP entries yet.*

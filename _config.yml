@@ -13,6 +13,4 @@ aux_links:
   Template Repository: https://github.com/CU-IntelligentSystems/cub-cs-ris-lab
 
 # Color scheme supports "light" (default) and "dark"
-color_scheme: dark
-
-
+color_scheme: light

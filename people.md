@@ -22,15 +22,17 @@ This page lists all lab members and links to their WIP entries.
 
 Lab members are listed by role, with links to their research contributions. The WIP entries section automatically aggregates all updates by each researcher.
 
-## Faculty
+## Faculty/Staff
+
+### Arturo
+**Projects:** [Sonar Computer Vision](/projects/sonar-cv/)
+**Research Focus:** Computer vision for underwater robotics, sonar imaging, simulation
 
 *Coming soon...*
 
 ## Graduate Students
 
-### Arturo
-**Projects:** [Sonar Computer Vision](/projects/sonar-cv/)
-**Research Focus:** Computer vision for underwater robotics, sonar imaging, simulation
+*Coming soon...*
 
 ## Undergraduate Students
 
@@ -38,7 +40,7 @@ Lab members are listed by role, with links to their research contributions. The 
 
 ---
 
-## WIP Entries by Person
+<!-- ## WIP Entries by Person
 
 {% assign wip_posts = site.pages | where_exp: "page", "page.path contains 'wip/'" | where_exp: "page", "page.title contains 'WIP:'" %}
 {% assign presenters = wip_posts | map: "presenter" | uniq | sort %}
@@ -53,4 +55,4 @@ Lab members are listed by role, with links to their research contributions. The 
 {% endfor %}
 {% else %}
 *No WIP entries yet.*
-{% endif %}
+{% endif %} -->

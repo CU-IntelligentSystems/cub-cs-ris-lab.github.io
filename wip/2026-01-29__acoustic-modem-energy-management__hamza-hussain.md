@@ -7,7 +7,7 @@ date: 2026-01-29
 project: acoustic-modem-energy-management
 presenter: Hamza Hussain
 tags: []
-status:
+status: experiments
 ---
 
 # WIP - Acoustic Model Energy Management - Hamza Hussain - 2026-01-29
@@ -24,7 +24,7 @@ status:
 - Slides / notes / figures:
 
 **Context for future handover (max 3 bullets)**
--
+- 
 -
 -
 

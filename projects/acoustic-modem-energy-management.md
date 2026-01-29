@@ -4,6 +4,7 @@ layout: default
 parent: Projects
 nav_order: 1
 primary_researcher: Hamza Hussain
+status: experiments
 ---
 
 # Acoustic Model Energy Management

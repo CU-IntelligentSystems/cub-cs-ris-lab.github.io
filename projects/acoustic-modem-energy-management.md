@@ -1,5 +1,5 @@
 ---
-title: Acoustic Model Energy Management
+title: Acoustic Modem Energy Management
 layout: default
 parent: Projects
 nav_order: 2

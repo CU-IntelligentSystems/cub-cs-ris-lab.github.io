@@ -4,7 +4,7 @@ layout: default
 parent: WIP Log
 nav_order: 2
 date: 2026-01-29
-project: acoustic-model-energy-management
+project: acoustic-modem-energy-management
 presenter: Hamza Hussain
 tags: []
 status:

@@ -30,7 +30,7 @@ research_focus:
 
 ## Current Projects
 
-{% assign all_projects = site.pages | where_exp: "p", "p.path contains 'projects/'" | where_exp: "p", "p.primary_researcher == page.first_name" %}
+{% assign all_projects = site.pages | where_exp: "p", "p.path contains 'projects/'" | where_exp: "p", "p.primary_researcher contains page.first_name and p.primary_researcher contains page.last_name" %}
 {% if all_projects.size > 0 %}
 {% for project in all_projects %}
 - [{{ project.title }}]({{ project.url | relative_url }})
@@ -49,3 +49,4 @@ research_focus:
 {% else %}
 *No WIP entries yet.*
 {% endif %}
+

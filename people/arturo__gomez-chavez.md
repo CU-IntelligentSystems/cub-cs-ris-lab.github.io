@@ -1,5 +1,5 @@
 ---
-title: "Arturo"
+title: "Arturo Gomez Chavez"
 layout: default
 parent: People
 nav_order: 1

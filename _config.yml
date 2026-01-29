@@ -7,5 +7,3 @@ url: https://cub-cs-ris-lab.github.io
 aux_links:
   Template Repository: https://github.com/CU-IntelligentSystems/cub-cs-ris-lab.github.io
 
-plugins:
-  - jekyll-default-layout

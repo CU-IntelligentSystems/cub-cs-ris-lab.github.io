@@ -6,7 +6,7 @@ nav_order: 1
 
 <img src="{{ '/assets/icons/cub-ris-logo-1.jpeg' | relative_url }}" alt="Lab Logo" style="float: left; margin-right: 20px; margin-bottom: 10px; width: 150px;">
 
-# {{ site.lab_name }} - Public Log
+# {{ site.lab_name }} - Work Log
 {: .no_toc }
 
 This website serves as the public research log and knowledge base for the {{ site.lab_name }}.

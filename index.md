@@ -4,11 +4,15 @@ layout: home
 nav_order: 1
 ---
 
+<img src="{{ '/assets/icons/cub-ris-logo-1.jpeg' | relative_url }}" alt="Lab Logo" style="float: left; margin-right: 20px; margin-bottom: 10px; width: 150px;">
+
 # Research Lab - Public Log
 {: .no_toc }
 
 This website serves as the public research log and knowledge base for the Research Lab.
 {: .fs-6 .fw-300 }
+
+<div style="clear: both;"></div>
 
 ---
 

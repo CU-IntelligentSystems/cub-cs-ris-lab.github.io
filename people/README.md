@@ -2,28 +2,44 @@
 
 This folder contains individual markdown files for each lab member.
 
+## Naming Convention
+
+All people files should follow this naming convention:
+```
+firstname__lastname.md
+```
+
+**Examples:**
+- `arturo__gomez-chavez.md`
+- `hamza__hussain.md`
+
+Use lowercase with double underscore between first and last name. Use hyphens for compound last names.
+
 ## Adding a New Person
 
-1. Copy `TEMPLATE.md`
-2. Rename to `firstname__lastname.md` (lowercase, double underscore between first and last name)
-   - Use hyphens for double last names: `maria__garcia-lopez.md`
-3. Fill in the frontmatter fields
+1. Copy the `TEMPLATE.md` file
+2. Rename it following the naming convention above
+3. **Remove** the `published: False` line from the frontmatter
+4. Fill in the frontmatter fields (see Frontmatter Reference below)
+5. Fill in the content sections (see Content Sections below)
 
-## Frontmatter Fields
+## Frontmatter Reference
 
-| Field | Required | Description | Options |
-|-------|----------|-------------|---------|
-| `first_name` | Yes | First name | |
-| `last_name` | Yes | Last name | |
-| `group` | Yes | Lab role category | `faculty`, `phd`, `masters`, `undergrad`, `external` |
-| `honorific_title` | No | Title prefix | e.g., `Dr.`, `Prof.` |
-| `last_degree` | No | Highest degree | e.g., `PhD`, `MSc`, `BSc` |
-| `public_url` | No | Personal website | Full URL |
-| `status` | No | Activity status | `active`, `inactive` |
-| `offboard` | No | Left the group | `yes`, `no` |
-| `research_focus` | No | Brief research description | |
-
-**Note:** Projects are linked automatically based on the `primary_researcher` field in project files.
+| Field | Required | Description |
+|-------|----------|-------------|
+| `title` | Yes | "Firstname Lastname" |
+| `layout` | Yes | Always `default` |
+| `parent` | Yes | Always `People` |
+| `nav_order` | Yes | Order in sidebar navigation |
+| `first_name` | Yes | First name |
+| `last_name` | Yes | Last name |
+| `group` | Yes | Lab role category (see Group Values) |
+| `honorific_title` | No | Title prefix (e.g., `Dr.`, `Prof.`, `PhD`) |
+| `last_degree` | No | Highest degree (e.g., `PhD`, `MSc`, `BSc`, `Bachelors`) |
+| `public_url` | No | Personal website URL |
+| `status` | Yes | `active` or `inactive` |
+| `offboard` | No | `yes` or `no` |
+| `research_focus` | No | Brief research description |
 
 ## Group Values
 
@@ -33,6 +49,28 @@ This folder contains individual markdown files for each lab member.
 - `undergrad` - Undergraduate students
 - `external` - External collaborators
 
+## Status Values
+
+- `active` - Current lab member (displayed in main sections)
+- `inactive` - Former lab member (displayed in Alumni section)
+
+## Content Sections
+
+Each person page has three main sections:
+
+### About
+Brief biography and background information.
+
+### Current Projects
+Automatically lists projects where the person is the `primary_researcher`. The filter matches projects where `primary_researcher` contains both the first and last name.
+
+### Related WIP Entries
+Automatically lists WIP entries where the person is the `presenter`. The filter matches entries where `presenter` contains both the first and last name.
+
 ## Offboarding
 
-When a member leaves the lab, set `offboard: Yes`. They will be moved to the Alumni section automatically.
+When a member leaves the lab:
+1. Set `status: inactive`
+2. Optionally set `offboard: yes`
+
+They will automatically be moved to the Alumni section on the People page.

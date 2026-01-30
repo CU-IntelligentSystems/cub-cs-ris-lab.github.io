@@ -24,7 +24,7 @@ published: False
 Please don't inlicde the published Tag above when creating your file
 -->
 
-# {{ page.honorific_title }} {{ page.first_name }} {{ page.last_name }}
+# {{ page.first_name }} {{ page.last_name }}
 {: .no_toc }
 
 {{ page.research_focus }}
@@ -38,7 +38,7 @@ Please don't inlicde the published Tag above when creating your file
 
 ## Current Projects
 
-{% assign all_projects = site.pages | where_exp: "p", "p.path contains 'projects/'" | where_exp: "p", "p.primary_researcher == page.first_name" %}
+{% assign all_projects = site.pages | where_exp: "p", "p.path contains 'projects/'" | where_exp: "p", "p.primary_researcher contains page.first_name and p.primary_researcher contains page.last_name" %}
 {% if all_projects.size > 0 %}
 {% for project in all_projects %}
 - [{{ project.title }}]({{ project.url | relative_url }})
@@ -49,10 +49,10 @@ Please don't inlicde the published Tag above when creating your file
 
 ## Related WIP Entries
 
-{% assign person_wips = site.pages | where_exp: "p", "p.path contains 'wip/'" | where_exp: "p", "p.presenter == page.first_name or p.presenter contains page.first_name" | sort: "date" | reverse %}
+{% assign person_wips = site.pages | where_exp: "p", "p.path contains 'wip/'" | where_exp: "p", "p.presenter contains page.first_name and p.presenter contains page.last_name" | sort: "date" | reverse %}
 {% if person_wips.size > 0 %}
 {% for wip in person_wips %}
-- [{{ wip.title }}]({{ wip.url | relative_url }}) - {{ wip.date | date: "%Y-%m-%d" }}
+- [{{ wip.title }}]({{ wip.url | relative_url }})
 {% endfor %}
 {% else %}
 *No WIP entries yet.*

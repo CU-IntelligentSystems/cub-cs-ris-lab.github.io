@@ -1,5 +1,8 @@
 ---
 title: "WIP: <project_slug> - <presenter> [<YYYY-MM-DD>]"
+layout: default
+parent: WIP Log
+nav_order: 1
 date: <YYYY-MM-DD>
 project: <project_slug>
 presenter: <Full Name>

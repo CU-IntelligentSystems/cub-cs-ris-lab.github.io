@@ -17,7 +17,7 @@ This page shows the latest Work-In-Progress (WIP) entries across all projects, n
 
 The WIP Log aggregates all work-in-progress updates from researchers across projects. Each entry follows a standardized format documenting goals, progress, results, and reproducibility details. Entries are automatically pulled from the `wip/` directory and sorted by date.
 
-{% assign wip_posts = site.pages | where_exp: "page", "page.path contains 'wip/'" | where_exp: "page", "page.title contains 'WIP:'" | sort: "date" | reverse %}
+{% assign wip_posts = site.pages | where_exp: "page", "page.path contains 'wip/'" | where_exp: "page", "page.name != 'TEMPLATE.md'" | where_exp: "page", "page.title contains 'WIP:'" | sort: "date" | reverse %}
 
 {% if wip_posts.size > 0 %}
 {% for post in wip_posts %}

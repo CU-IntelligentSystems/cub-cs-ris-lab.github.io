@@ -17,7 +17,12 @@ public_url:           # Personal website or profile URL
 status: active        # active / inactive
 offboard: no          # yes / no
 research_focus:       # Brief description of research interests
+
+published: False
 ---
+<!---
+Please don't inlicde the published Tag above when creating your file
+-->
 
 # {{ page.honorific_title }} {{ page.first_name }} {{ page.last_name }}
 {: .no_toc }

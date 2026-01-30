@@ -6,7 +6,11 @@ presenter: <Full Name>
 tags: [<tag1>, <tag2>, <tag3>]
 status: exploring | implementing | experiments | writing | wrapping-up | maintenance | concluded
 notetaker: <Full Name>
+published: False
 ---
+<!---
+Please don't inlicde the published Tag above when creating your file
+-->
 
 # WIP — <project name> — <Presenter> — \[<YYYY-MM-DD>\]
 
